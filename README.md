@@ -17,3 +17,9 @@ Please run with caution as it will do the following:
 12. PolicyType4 - Targeted at the users with Privileged Access, Admins etc. These Policies will start with 901, 902 respectively.
 13. Both newly created or existing Break Glass/Emergency Access accounts will be added as excluded to all newly created policies 
    
+# How to use the script
+Download all files to a local folder. Run the SetupCAPolicies.ps1 file and that will do all the magic
+
+If you have your ownset of policies you wish to use run the Export-Policies.ps1 script. this will connect to your tenant and export all your policies to JSON files in a specified folder. You can then use this to create your own policies in another tenant.
+
+The script turnon-adminconsent.ps1 is still a work in progress, the idea is to prevent the users from consenting to adding apps. it will send the request to an admin instead.
